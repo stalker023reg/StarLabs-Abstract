@@ -1,0 +1,13 @@
+aiohttp==3.11.11
+asposestorage==1.0.2
+colorama==0.4.6
+eth_account==0.13.4
+eth_typing==5.0.1
+loguru==0.7.2
+noble_tls==0.0.107
+patchright==1.49.1
+pyfiglet==1.0.2
+PyYAML==6.0.2
+termcolor==2.5.0
+urllib3==2.3.0
+web3==7.6.1

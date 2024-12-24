@@ -1,0 +1,59 @@
+settings:
+  # number of retries for ANY action
+  attempts: 5
+
+  # number of retries for tasks at abstract.deform.cc
+  tasks_attempts: 5
+
+  # pause between attempts
+  pause_between_attempts: [5, 15]
+
+  # pause in seconds between accounts
+  random_pause_between_accounts: [3, 10]
+
+  # pause in seconds between actions
+  random_pause_between_actions: [2, 5]
+
+  # use referral code
+  use_referral_code: ralse
+
+  # number of invites per referral code 
+  invites_per_referral_code: [5, 20]
+
+  # -----  IMPORTANT ----- #
+  # If you want to use faucet, you need to set up capsolver api key.
+  # Open extra/capsolver_extension/assets/config.js
+  # And there you can find apiKey: "CAP-x", field.
+  # Replace "CAP-x" with your capsolver api key.
+  # -----  IMPORTANT ----- #
+
+# --------------------------- #
+flow:
+  # tasks to do.
+  # "bridge" - bridge Sepolia ETH to Abstract testnet
+  # "faucet" - request ETH from faucet
+  # "main" - main tasks at https://abstract.deform.cc/
+  # "buy_deform_nft" - buy Deform NFT
+  # "collect_referral_code" - collect referral codes to data/referral_codes.txt
+  # "show_user_info" - show user info in terminal
+  # Example: tasks: ["bridge", "faucet", "main", "buy_deform_nft"]
+  tasks: ["main"]
+
+
+# --------------------------- #
+buy_deform_nft:
+  base_network_rpc: ["https://base.llamarpc.com"]
+
+  # amount of NFTs to buy
+  # if you want to buy exact amount, set amount_to_buy to [1, 1]
+  # if you want to buy random amount, set amount_to_buy to [1, 5] (from 1 to 5)
+  amount_to_buy: [1, 1]
+
+
+# --------------------------- #
+bridge:
+  # how much ETH to bridge
+  eth_to_bridge: [0.01, 0.02]
+    
+  # RPC for Sepolia Testnet
+  sepolia_rpc: ["https://1rpc.io/sepolia"]
