@@ -15,7 +15,7 @@ settings:
   random_pause_between_actions: [2, 5]
 
   # use referral code
-  use_referral_code: ralse
+  use_referral_code: false
 
   # number of invites per referral code 
   invites_per_referral_code: [5, 20]
