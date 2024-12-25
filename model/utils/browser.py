@@ -148,7 +148,7 @@ class CreateBrowserInstance:
                 "bypass_csp": True,
                 "java_script_enabled": True,
                 "accept_downloads": True,
-                "headless": True,
+                "headless": False,
                 "args": launch_args,
                 "chromium_sandbox": False,
                 "viewport": viewport,
